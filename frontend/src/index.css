@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Poppins:wght@500&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Poppins&display=swap'); */
+
+/* Common Clases */
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.text-pink {
+  color: rgb(231, 120, 157);
+}
+
+.bg-pink {
+  background-color: rgb(231, 120, 157);
+}
+
+.active {
+  color: rgb(231, 120, 157) !important;
+}
+
+.modal .text-primary {
+  color: rgb(13, 110, 253) !important;
+}
+
+/* Card Hover */
+.card {
+  transition: all 0.33s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+
+/* Dark Mode */
+.dark {
+  background-color: #050c26 !important;
+  color: white !important;
+
+  .active {
+    color: rgb(231, 120, 157) !important;
+  }
+
+  nav {
+    background-color: #050c26 !important;
+  }
+
+  a,
+  h4,
+  .slick-dots li button:before {
+    color: white !important;
+  }
+
+  .card,
+  .badge {
+    background-color: #050c26 !important;
+    color: white !important;
+    border: 1px solid white;
+  }
+
+  .modal-content,
+  .btn-close {
+    background-color: #050c26 !important;
+    color: white !important;
+    border: 1px solid white;
+  }
+
+  .modal .text-primary {
+    color: rgb(13, 110, 253) !important;
+  }
+}
