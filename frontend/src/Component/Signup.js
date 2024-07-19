@@ -19,7 +19,7 @@ const Signup = () => {
         const user = data;
         // console.log(user);
 
-        await axios.post('http://localhost:4002/user/signup', user)
+        await axios.post('https://bookstoreapp-production.up.railway.app/user/signup', user)
             .then(res => {
                 console.log(res.data);
                 nav('/');

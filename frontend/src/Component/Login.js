@@ -17,7 +17,7 @@ const Login = () => {
         const user = data;
         // console.log(user);
 
-        await axios.post('http://localhost:4002/user/login', user)
+        await axios.post('https://bookstoreapp-production.up.railway.app/user/login', user)
             .then(res => {
                 console.log(res.data);
                 toast.success('Login Successfully');

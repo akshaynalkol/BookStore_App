@@ -11,7 +11,7 @@ const FreeBook = () => {
     useEffect(() => {
         const getBook = async () => {
             try {
-                let res = await axios.get('http://localhost:4002/book');
+                let res = await axios.get('https://bookstoreapp-production.up.railway.app/book');
                 // console.log(res.data);
 
                 setBook(res.data.filter(item => item.category === 'Free'));
